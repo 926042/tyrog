@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+#cards-selector {
+    display: flex; /* changes to flex */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(0, 0%, 50%); /* hsla(0, 0%, 0%, 0.30); */
+}
+#card-pick-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 75vw;
+    height: 75vh;
+}
+#card-pick-card-containers {
+    background-color: hsl(0, 0%, 40%);
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+#finish-picking-button {
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    width: 18vw;
+    height: 23vw;
+    background-color: hsl(0, 0%, 70%);
+    border: 2px solid hsl(0, 0%, 45%);
+    border-radius: 1vw;
+}
+#finish-picking-button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 60%);
+    border: 2px solid hsl(0, 0%, 42.5%);
+}
+#finish-picking-button:focus {
+    outline: 2px solid hsl(0, 0%, 70%);
+    outline-offset: 0.001vw;
+}
+#finish-picking-button:active {
+    background-color: hsl(0, 0%, 50%);
+    border: 2px solid hsl(0, 0%, 40%);
+}
+
+#card-container-picked { 
+    display: flex;
+    gap: 10px;
+}
+#picked-containers-container {
+    background-color: hsl(0, 0%, 40%); 
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#effect-overlay-picking {
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.50);
+    display: none;
+    z-index: 1000; 
+    word-wrap: break-word;
+    user-select: none;
+}
+  
+#effect-text-picking {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    z-index: 201; /* must be higher than overlay*/
+    user-select: none;
+}

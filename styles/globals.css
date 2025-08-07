@@ -1,0 +1,49 @@
+/* global css used in most scenes */
+
+html, body {
+    overflow: hidden;
+    margin: 0;
+    height: calc(100vh * (100 / 100vw));
+    width: 100vw;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.flex-1 {flex: 1;}
+.flex-2 {flex: 2;}
+.flex-3 {flex: 3;}
+.flex-4 {flex: 4;}
+.flex-5 {flex: 5;}
+.flex {display: flex;}
+.justify-center {justify-content: center;}
+.align-center {align-items: center;}
+
+card {
+    width: 7vw;
+    height: 10vw;
+    background-color: hsl(0, 0%, 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid hsl(0, 0%, 45%);
+    border-radius: 5px;
+    user-select: none;
+}
+card:hover {
+    cursor: pointer;
+}
+
+.skill {
+    background-color: hsl(220, 20%, 70%);
+}
+.upgrader {
+    background-color: hsl(20, 20%, 70%);
+}
+

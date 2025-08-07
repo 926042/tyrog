@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="no"> <!-- change lang to "en" later -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tyrog</title>
+	<link rel="stylesheet" href="styles/globals.css">
+	<link rel="stylesheet" href="styles/gameround.css">
+	<link rel="stylesheet" href="styles/picking.css">
+	<link rel="stylesheet" href="styles/shop.css">
+</head>
+<body class="disable-context">
+	<div id="cards-selector">
+		Right-click and hold on cards to show their effects
+		<div id="card-pick-container">
+			<div class="flex flex-2">
+				<div id="card-pick-card-containers" class="flex-3">
+					<div id="upgrader-container-pick" class="card-container"></div>
+					<div id="skill-container-pick" class="card-container"></div>
+				</div>
+				<div class="flex justify-center align-center flex-1">
+					<button id="finish-picking-button">start</button>
+				</div>
+			</div>
+			<div id="picked-containers-container" class="flex-2">
+				<div id="upgrader-container-picked" class="card-container"></div>
+				<div id="skill-container-picked" class="card-container"></div>
+			</div>
+		</div>
+		
+		<div id="effect-overlay-picking" class="disable-context">
+			<div id="effect-text-picking"></div>
+		</div>
+		
+	</div>
+
+	<div id="gameround">
+		<div class="background-game-round"></div>
+		<div id="character-container" class="card-container">
+			<character data-index="0"></character>
+		</div>
+		<div id="upgrader-container" class="card-container"></div>
+		<div class="ore-track"></div>
+		<div id="skill-container" class="card-container"></div>
+		<div id="effect-overlay">
+			<div id="effect-text"></div>
+		</div>
+		<div id="value-display"></div>
+		<button id="run-button"> RUN </button>
+		<div id="goal-display"></div>
+		<div id="results-container">
+			<div id="results-text"></div>
+			<button id="results-shop-button"> TO SHOP </button>
+		</div>
+	</div>
+
+	<div id="shop">
+		<div id="shop-container">
+			<div id="shop-sidebar-left" class="flex justify-center align-center">
+				<div id="shop-effect-overlay" class="flex justify-center align-center">
+					<div id="shop-effect-text"></div>
+				</div>
+			</div>
+			<div id="shop-items">
+				<div id="shop-skill-upgrader-container"></div>
+				<div id="shop-upgrades-container">
+					<div id="shop-general-upgrades-container"></div>
+					<div id="shop-upgrade-packs-container"></div>
+				</div>
+			</div>
+			<div id="shop-sidebar-right">
+				<div id="shop-money-container" class="flex justify-center align-center">
+					
+					<div id="shop-money-display" class="flex align-center">
+						$
+						<div id="shop-money"></div>
+					</div>
+				</div>
+				<button id="shop-reroll-button">
+					<div>Reroll: ‌</div>
+					<div id="shop-reroll-price">$5</div>
+				</butt>
+				<button id="shop-proceed-button">Proceed</button>
+			</div>
+		</div>
+		<div id="shop-card-containers">
+			<div id="upgrader-container-shop" class="flex"></div>
+			<div id="skill-container-shop" class="flex"></div>
+		</div>
+		
+	</div>
+
+	<script src="./scripts/script.js" type="module"></script>
+	<script src="./scripts/utils.js" type="module"></script>
+	<script src="./scripts/card_utils.js" type="module"></script>
+	<script src="./game_logic/skill.js" type="module"></script>
+	<script src="./game_logic/game.js" type="module"></script>
+	<script src="./game_logic/ore.js" type="module"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
+</body>
+</html>

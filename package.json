@@ -1,0 +1,14 @@
+{
+    "name": "tyrog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+      "start": "node main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  

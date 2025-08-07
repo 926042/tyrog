@@ -1,0 +1,208 @@
+#shop {
+    display: none; /* changes to flex */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding: 3vw 10vw;
+    background-color: hsl(0, 0%, 50%); /* hsla(0, 0%, 0%, 0.30); */
+}
+
+#shop-container {
+    display: flex;
+    flex: 3;
+    gap: 1vw;
+    height: 100%;
+    width: 100%;
+}
+
+#shop-sidebar-left {
+    background-color: hsl(0, 0%, 60%);
+    border: 0.2vw solid hsl(0, 0%, 40%);
+    border-radius: 1vw;
+    flex: 3;
+    height: 100%;
+    width: 100%;
+    padding: 1.1vw;
+}
+#shop-effect-overlay {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    background-color: hsl(0, 0%, 40%);
+    border: 0.2vw solid hsl(0, 0%, 30%);
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    font-size: 1.35vw;
+}
+
+#shop-items {
+    padding: 0.5vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    gap: 1vw;
+}
+#shop-skill-upgrader-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0.25vw;
+    background-color: hsl(0, 0%, 30%);
+    border: 0.2vw solid hsl(0, 0%, 20%);
+    border-radius: 0.5vw;
+    width: 100%;
+    height: 100%;
+}
+#shop-upgrades-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 1vw;
+}
+#shop-general-upgrades-container {
+    background-color: hsl(0, 0%, 30%);
+    border: 0.2vw solid hsl(0, 0%, 20%);
+    border-radius: 0.5vw;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+#shop-upgrade-packs-container {
+    background-color: hsl(0, 0%, 30%);
+    border: 0.2vw solid hsl(0, 0%, 20%);
+    border-radius: 0.5vw;
+    width: 100%;
+    height: 100%;
+    flex: 3;
+}
+
+#shop-sidebar-right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 1vw;
+}
+#shop-money-container {
+    background-color: hsl(0, 0%, 60%);
+    border: 0.2vw solid hsl(0, 0%, 40%);
+    border-radius: 1vw;
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+    flex: 1;
+}
+#shop-money-display{
+    background-color: hsl(0, 0%, 40%);
+    border: 0.2vw solid hsl(0, 0%, 30%);
+    width: 100%;
+    height: 100%;
+    padding: 0.5vw;
+    color: hsl(50, 75%, 50%);
+    font-size: 1.7vw;
+}
+
+#shop-reroll-button {
+    background-color: hsl(120, 10%, 65%);
+    border: 0.2vw solid hsl(0, 0%, 40%);
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1.5;
+}
+.shop-reroll-button:hover {
+    background-color: hsl(120, 10%, 70%);
+}
+.shop-reroll-button:active {
+    background-color: hsl(120, 10%, 60%);
+}
+
+#shop-proceed-button {
+    background-color: hsl(0, 0%, 60%);
+    border: 0.2vw solid hsl(0, 0%, 40%);
+    border-radius: 1vw;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3vw;
+    flex: 4;
+}
+#shop-proceed-button:hover {
+    background-color: hsl(0, 0%, 60%);
+    border: 0.2vw solid hsl(0, 0%, 40%);
+    border-radius: 1vw;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3vw;
+    flex: 4;
+    
+    transition: all 0.2s ease;
+}
+#shop-proceed-button:focus {
+    outline: 2px solid hsl(0, 0%, 70%);
+    outline-offset: 0.001vw;
+}
+
+#shop-card-containers {
+    background-color: hsl(0, 0%, 30%);
+    padding: 1vw;
+    border: 0.2vw solid hsl(0, 0%, 20%);
+    border-radius: 0.5vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    gap: 1vw;
+}
+#upgrader-container-shop {
+    gap: 1vw;
+}
+#skill-container-shop {
+    gap: 1vw;
+}
+
+.shop-buy-button {
+    display: none;
+    background-color: hsl(120, 50%, 75%);
+    width: 80%;
+    height: 20%;
+    border: 0.2vw solid hsl(120, 25%, 40%);
+    border-radius: 0.5vw;
+}
+.shop-buy-button:hover {
+    background-color: hsl(120, 50%, 85%);
+    border: 0.2vw solid hsl(120, 25%, 45%);
+}
+.shop-buy-button:active {
+    background-color: hsl(120, 30%, 65%);
+    
+    border: 0.2vw solid hsl(120, 25%, 40%);
+}
+
+.shop-sell-button {
+    display: none;
+    background-color: hsl(0, 50%, 75%);
+    width: 80%;
+    height: 20%;
+    border: 0.2vw solid hsl(0, 25%, 40%);
+    border-radius: 0.5vw;
+}
+.shop-sell-button:hover {
+    background-color: hsl(0, 50%, 82.5%);
+    border: 0.2vw solid hsl(0, 25%, 52.5%);
+}
+.shop-sell-button:active {
+    background-color: hsl(0, 35%, 65%);
+    
+    border: 0.2vw solid hsl(0, 25%, 45%);
+}
